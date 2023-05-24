@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-single-price-grid-component-qS_kPJlkm0)
 - Live Site URL: [Live Site](https://devjhex-single-price-grid-component.vercel.app)
 
 ## My process
