@@ -1,0 +1,199 @@
+/* Colors */
+/* Primary colors */
+$cyan: hsl(179, 62%, 43%);
+$brightYellow:hsl(71, 73%, 54%);
+
+/* Neutral colors */
+$lightGray:hsl(204, 43%, 93%);
+$grayishBlue:hsl(218, 22%, 67%);
+
+/* Fonts */
+$font:'Karla', sans-serif;
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, p{
+     margin-top: 0;
+     margin-bottom: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     height: 100vh;
+    background-color: $lightGray;
+    font-family: $font;
+}
+
+.item{
+    max-width: 360px;
+
+    .title{
+        padding-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .subtitle{
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+}
+
+.priceGrid__intro{
+    background-color:white;
+    border-radius: 5px 5px 0 0;
+    .title{
+       color:$cyan;
+       font-weight: 700;
+    }
+    .subtitle{
+        color: $brightYellow; 
+    }
+
+    .text{
+        color: $grayishBlue;
+        margin-top: 1.3rem;
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+        padding-bottom: 2rem;
+        text-align: left;
+        line-height: 1.9;
+    }
+}
+
+.priceGrid__subInfo{
+    background-color: $cyan;
+    color:$lightGray;
+    height: 240px;
+    
+    .subtitle {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        color: hsla(203, 44%, 93%, 0.522);
+        font-weight: 400;
+       
+        .dollar{
+            font-weight: 700;
+            color: white;
+            font-size: 2.2rem;
+            margin-right:15px;
+        }
+    }
+
+    .text{
+        margin-top: .8rem;
+        margin-left: 1.5rem;
+    }
+
+    .signUp{
+        font-family: $font;
+        color: white;
+        background-color: $brightYellow;
+        font-size: 1.1rem;
+        display: block;
+        margin-top: 1.5rem;
+        width: 87%;
+        height: 50px;
+        margin-left: 1.5rem;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 2px 27px 51px -9px rgba(0,0,0,0.29);
+        -webkit-box-shadow: 2px 27px 51px -9px rgba(0,0,0,0.29);
+        -moz-box-shadow: 2px 27px 51px -9px rgba(0,0,0,0.29);
+        
+    }
+}
+.priceGrid__foot{
+    background-color: hsla(179, 66%, 45%, 0.888);
+    color: hsl(200, 100%, 98%);
+    border-radius: 0 0 5px 5px;
+    .text{
+        color: hsla(203, 44%, 93%, 0.804);
+        margin-top: 1.3rem;
+        margin-left: 1.5rem;
+        padding-bottom: 2rem;
+        margin-right: 30%;
+        text-align: left;
+        line-height: 1.5;     
+    }
+}
+
+@media(min-width:700px){
+    .priceGrid{
+        display: grid;
+        grid-template-columns: 310px 300px;
+        grid-template-rows:1fr 1.3fr;
+
+        .priceGrid__intro{
+            max-width: 620px;
+            grid-column: 1/span 2;
+            grid-row:1/1;
+            .title{
+                padding-top: 2.5rem;
+                margin-left: 2rem;
+            }
+            .subtitle{
+                margin-top: 1.5rem;
+                margin-left: 2rem;
+            }
+            .text{
+                margin-top: .5rem;
+                padding-bottom: 0;
+                margin-left: 2rem;
+                line-height:1.7;
+            }
+        }
+
+        .priceGrid__subInfo{
+          grid-row: 2/3;
+          height: auto;
+          border-radius: 0 0 0 5px;
+
+          .title{
+            margin-top: 1.1rem;
+            margin-left: 2rem;
+        }
+        .subtitle {
+           margin-left: 2rem;
+        }
+    
+        .text{
+           margin-left: 2rem;
+        }
+    
+        .signUp{
+            width: 77%;
+            margin-top:2rem;
+            margin-left: 2rem;
+            
+        }
+        }
+
+        .priceGrid__foot{
+            grid-row:2/3;
+            border-radius: 0 0 5px 0;
+            .title{
+                padding-top: 2.4rem;
+                margin-left: 2rem;
+            }
+
+            .text{
+                margin-left: 2rem; 
+                margin-right: 24.9%; 
+            }
+        }
+    }
+}
+
