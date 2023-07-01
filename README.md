@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Single price grid component coding challenge](./design/Solution.png)
 
 
 ### Links
